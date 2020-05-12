@@ -1,0 +1,17 @@
+#+OPTIONS: toc:nil num:nil tasks:nil
+#+TITLE: CS 290 Project Proposal
+#+AUTHOR: Jeremy Tsang
+#+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
+
+* Overview
+For my project, I plan to make a personal portfolio site that will have a short summary of myself and projects/code that I have worked on.
+* Page 1: Landing Page
+This page will have an interactive image carousel with screenshots of my projects. It will also contain links to external sites including (but not limited to) LinkedIn, GitHub, YouTube. This page will also have a download button for downloading a resume PDF file. Lastly I will have a short summary of my personal elevator pitch.
+* Page 2: Projects Page
+This page will go into details about each project and show a video/screen of each project in action plus a more elaborate description in a scrollbox to the side. Projects will be listed in an unordered list. Videos will be embedded in the page but are clickable to open in YouTube as well.
+* Page 3: About Page
+This page will include my own personal interests and hobbies. Each entry will have a section tailored specifically to its particular hobby/interest and this will vary depending on the content. In general longer descriptions will be kept to scrollboxes to maintain a consistent shape.
+* Page 4: Contact
+This page will contain a form to permit the user to send me an email. Will also contain my own email address as well in case user would rather compose the email in their own email client.
+* Navbar
+The horizontal navbar will be present on each page and contain links to navigate to and from any page.
