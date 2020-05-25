@@ -12,15 +12,15 @@ ul.nav {
     margin-bottom: 3em;
 }
 
-img {
+.carousel-image {
+    margin-top: 1em;
     height: 500px;
 
 }
 
 .carousel-buttons {
-    margin-bottom: 1em;
+    margin-top: 1em;
 }
-
 
 button {
     background-color: lightgray;
