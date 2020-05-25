@@ -8,6 +8,20 @@ ul.nav {
     margin-bottom: 3em;
 }
 
+#carousel {
+    margin-bottom: 3em;
+}
+
+img {
+    height: 500px;
+
+}
+
+.carousel-buttons {
+    margin-bottom: 1em;
+}
+
+
 button {
     background-color: lightgray;
 }
