@@ -11,6 +11,9 @@
     </title>
   </head>
   <body>
+    {{#if this.title}}
+      <h1 id="title">{{ this.title }}</h1>
+    {{/if}}
     {{{ body }}}
   </body>
 </html>
