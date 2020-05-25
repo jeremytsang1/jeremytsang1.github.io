@@ -25,3 +25,7 @@ ul.nav {
 button {
     background-color: lightgray;
 }
+
+#contactMessage {
+    height: 350px;
+}
