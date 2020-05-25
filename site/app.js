@@ -21,25 +21,29 @@ app.use(express.static(__dirname + '/static'));
 // -------------------------------------
 // Home page
 app.get('/', (req, res) => {
-  res.render('home');
+  let context = {};
+  res.render('home', context);
 });
 
 // -------------------------------------
 // Projects page
 app.get('/projects', (req, res) => {
-  res.render('projects');
+  let context = {title: "Projects"};
+  res.render('projects', context);
 });
 
 // -------------------------------------
 // About page
 app.get('/about', (req, res) => {
-  res.render('about');
+  let context = {title: "About"};
+  res.render('about', context);
 });
 
 // -------------------------------------
 // Contact page
 app.get('/contact', (req, res) => {
-  res.render('contact');
+  let context = {title: "Contact"};
+  res.render('contact', context);
 });
 
 // ----------------------------------------------------------------------------
