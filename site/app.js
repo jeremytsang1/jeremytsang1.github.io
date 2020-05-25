@@ -11,41 +11,35 @@ let bodyParser = require('body-parser');
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 3737);
+app.set('port', 3000);
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/static'));
 // ----------------------------------------------------------------------------
 // ***** Routes *****
 
-/**
- * Creates storage for request parameters.
- */
-const getRequestParams = (req, res, next) => {
-  res.locals.queryData = makeNameValueArray(req.query);
-  res.locals.bodyData = makeNameValueArray(req.body);
-  next();
-};
-
-app.use(getRequestParams);
-
 // -------------------------------------
-// ***** GET request route *****
+// Home page
 app.get('/', (req, res) => {
-  let context = {
-    'queryParams': res.locals.queryData,
-  };
-  res.render('home-get', context);
+  res.render('home');
 });
 
 // -------------------------------------
-// ***** POST request route *****
-app.post('/', (req, res) => {
-  let context = {
-    'queryParams': res.locals.queryData,
-    'bodyParams': res.locals.bodyData,
-  };
-  res.render('home-post', context);
+// Projects page
+app.get('/projects', (req, res) => {
+  res.render('projects');
+});
+
+// -------------------------------------
+// About page
+app.get('/about', (req, res) => {
+  res.render('about');
+});
+
+// -------------------------------------
+// Contact page
+app.get('/contact', (req, res) => {
+  res.render('contact');
 });
 
 // ----------------------------------------------------------------------------
@@ -75,20 +69,3 @@ app.listen(app.get('port'), function() {
         + '; press Ctrl-C to terminate.'
   );
 });
-
-// ----------------------------------------------------------------------------
-// ***** Helper functions *****
-/**
- * Convert the property name/value pairs into an array of size 2 objects.
- * @param {object} object - object to convert.
- * @return {array} - Array of objects (name/value pairs of the argument).
- */
-function makeNameValueArray(object) {
-  let params = [];
-
-  for (let name in object) {
-    params.push({'name': name, 'value': object[name]});
-  }
-
-  return params;
-}
