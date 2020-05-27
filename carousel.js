@@ -12,9 +12,7 @@ function interactiveCarousel() {
 
   function setInitialClasses() {
     // Treat list as a ring. Make the last item the one before the first.
-    items[itemCount - 1].classList.add("prev");
     items[0].classList.add("active");
-    items[1].classList.add("next");
   }
 
   function carouselButtonListeners() {

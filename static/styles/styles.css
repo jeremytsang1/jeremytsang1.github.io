@@ -39,7 +39,6 @@ button {
     z-index: 100;
 }
 
-.carousel-img.initial,
 .carousel-img.active {
     opacity: 1;
     position: relative;
@@ -48,20 +47,6 @@ button {
 
 .carousel-buttons {
     padding: 1em 0;
-
-}
-
-.carousel-img.prev,
-.carousel-img.next {
-    z-index: 800;
-}
-
-.carousel-img.prev {
-    transform: translateX(-100%); /* Move 'prev' item to the left */
-}
-
-.carousel-img.next {
-    transform: translateX(100%); /* Move 'next' item to the right */
 }
 
 .carousel-button-prev,
