@@ -83,6 +83,15 @@ div.project-extra-info {
    https://stackoverflow.com/a/15374994
 */
 
+div.container.project-page {
+    margin-top: 5%;
+}
+
+h1.project-page.title {
+
+    margin-top: 5%;
+}
+
 .project-list li {
     font-size: 1.5em;
 }
