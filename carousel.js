@@ -5,30 +5,43 @@ function interactiveCarousel() {
   let itemClassName = "carousel-img";
   let items = document.getElementsByClassName(itemClassName);
   let itemCount = items.length;
-  let slide = 0;
+  let current = 0;
 
   setInitialClasses();
   carouselButtonListeners();
 
   function setInitialClasses() {
-    // Treat list as a ring. Make the last item the one before the first.
-    items[0].classList.add("active");
+    items[current].classList.add("active");
   }
 
   function carouselButtonListeners() {
-    let next = document.querySelectorAll(".carousel-button-next")[0];
-    let prev = document.querySelectorAll(".carousel-button-prev")[0];
+    let next = document.querySelector(".carousel-button-next");
+    let prev = document.querySelector(".carousel-button-prev");
 
     next.addEventListener('click', moveNext);
     prev.addEventListener('click', movePrev);
   }
 
   function moveNext() {
-    console.log("NEXT clicked");
+    let original = current;
+    current = (current + 1) % itemCount;  // Wrap around with mod operator.
+    focusImage(original, current);
   }
 
   function movePrev(arg) {
-    console.log("PREV clicked");
+    let original = current;
+
+    current = (current - 1) % itemCount;
+
+    // Avoid negative indices.
+    if (current < 0) current += itemCount;
+
+    focusImage(original, current);
+  }
+
+  function focusImage(original, current) {
+    items[original].classList.remove("active")
+    items[current].classList.add("active")
   }
 
 }
