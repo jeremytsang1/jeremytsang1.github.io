@@ -187,12 +187,13 @@ div.powerlifting-preview-container {
 }
 
 div.powerlifting-description-container {
-   overflow: auto;
+    overflow: auto;
     width: 300px;
     float: left;
     height: 315px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-top: 25px;
 
     border: 1px solid black;
     background: white;
