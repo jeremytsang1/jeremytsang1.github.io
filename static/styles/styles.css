@@ -133,8 +133,8 @@ h1.project-page.title {
     width: 300px;
     float: left;
     height: 315px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     border: 1px solid black;
     background: white;
