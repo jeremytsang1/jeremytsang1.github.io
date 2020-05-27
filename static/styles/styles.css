@@ -17,12 +17,12 @@ button {
     height: 350px;
 }
 
-.carousel-wrapper {
+.carousel-container {
     overflow: hidden;
     width: 90%;
 }
 
-.carousel-wrapper * {
+.carousel-container * {
     box-sizing: border-box;
 }
 
