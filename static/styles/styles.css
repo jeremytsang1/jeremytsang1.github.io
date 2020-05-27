@@ -149,14 +149,14 @@ span.romance {
     color: red;
 }
 
-/* Table styles from
+/* Table styles inspired from
    https://webdesignerhut.com/pure-css-responsive-tables/
 */
 
 table {
     margin-top: 1rem;
 }
-/* Zebra striping */
+
 tr:nth-of-type(odd) {
     background: #fefefe;
 }
