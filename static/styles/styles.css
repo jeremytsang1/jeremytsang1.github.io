@@ -78,15 +78,14 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
    https://stackoverflow.com/a/15374994
 */
 
-.project-list {
-    transform: translateY(100px);
+.project-list li {
+    font-size: 1.5em;
 }
 
 /* Container for media and text description. */
 .project-container {
     /* positioning */
     width: 860px;
-    background-color: #ffcc33;
     margin: auto;
 
     /* visibility control */
@@ -106,7 +105,6 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
 .project-preview-container {
     width: 560px;
     float: left;
-    background-color: blue;
 }
 
 /* Media (either video or image). */
@@ -121,7 +119,6 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
     width: 300px;
     float: left;
     height: 315px;
-    background-color: green;
     padding-left: 25px;
     padding-right: 25px;
 }
