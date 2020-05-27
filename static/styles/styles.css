@@ -76,15 +76,6 @@ p.image-ownership {
     text-align: center;
 }
 
-.carousel-button-next::after {
-    left: 47%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-div.project-extra-info {
-    margin-top: 1.5rem;
-    float: right;
-}
 
 /* ------------------------------------------------------------------------- */
 /* PROJECT PAGE*/
@@ -148,6 +139,12 @@ h1.project-page.title {
     border: 1px solid black;
     background: white;
 }
+
+div.project-extra-info {
+    margin-top: 1.5rem;
+    float: right;
+}
+
 
 /* ------------------------------------------------------------------------- */
 /* ABOUT PAGE*/
