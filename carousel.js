@@ -1,6 +1,8 @@
-// Borrowed General structure from following tutorial:
-// https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
+/* Carousel logic borrowed from Marcus Michaels' tutorial "How to
+build a carousel from scratch in vanilla JS" (2019-01-13).
 
+https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
+*/
 function interactiveCarousel() {
   let itemClassName = "carousel-img";
   let items = document.getElementsByClassName(itemClassName);
