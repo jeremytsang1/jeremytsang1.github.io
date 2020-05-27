@@ -121,4 +121,7 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
     height: 315px;
     padding-left: 25px;
     padding-right: 25px;
+
+    border: 1px solid black;
+    background: white;
 }
