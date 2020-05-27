@@ -22,14 +22,6 @@ button {
     width: 90%;
 }
 
-.carousel-container * {
-    box-sizing: border-box;
-}
-
-.carousel {
-    transform-style: preserve-3d;
-}
-
 .carousel-img {
     opacity: 0;
     position: absolute;
