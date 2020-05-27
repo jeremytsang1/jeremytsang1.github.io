@@ -10,6 +10,9 @@ function interactiveCarousel() {
   setInitialClasses();
   carouselButtonListeners();
 
+  // Keep calling moveNext() to get "autoscroll" effect.
+  let timer = setInterval(moveNext, 3000)
+
   function setInitialClasses() {
     items[current].classList.add("active");
   }
