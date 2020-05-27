@@ -82,38 +82,46 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
     transform: translateY(100px);
 }
 
-.tmp-container {
-    margin: auto;
-}
-
-img.project-preview  {
-    width: 100%;
-}
-
-.project-scrollbox {
-    overflow: auto;
-    width: 150px;
-    height: 150px;
-    float:left;
-}
-
+/* Container for media and text description. */
 .project-container {
-    width: 600px;
+    /* positioning */
+    width: 860px;
     background-color: #ffcc33;
     margin: auto;
+
+    /* visibility control */
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
 }
 
+/* Styles for the selected currently active/selected project. */
+.project-container.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+}
+
+/* Sub container for the media. */
 .project-preview-container {
-    width: 300px;
+    width: 560px;
     float: left;
     background-color: blue;
 }
 
+/* Media (either video or image). */
+.project-preview  {
+    width: 100%;
+    height: 315px;
+}
+
+/* Scrollbox for the project description. */
 .project-description-container {
-    overflow: auto;  /* Allow for "scrollbox" */
+    overflow: auto;
     width: 300px;
     float: left;
-    height: 300px;
+    height: 315px;
     background-color: green;
-    padding-left: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
