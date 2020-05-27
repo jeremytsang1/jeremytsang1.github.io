@@ -72,6 +72,11 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+div.project-extra-info {
+    margin-top: 1.5rem;
+    float: right;
+}
+
 /* ------------------------------------------------------------------------- */
 /* PROJECT PAGE*/
 /* Aligning divs from this stack overflow post
