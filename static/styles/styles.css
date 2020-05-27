@@ -17,6 +17,9 @@ button {
     height: 350px;
 }
 
+/* ------------------------------------------------------------------------- */
+/* IMAGE CAROUSEL */
+
 /* Carousel styles borrowed from Marcus Michaels' tutorial "How to
 build a carousel from scratch in vanilla JS" (2019-01-13).
 
@@ -67,4 +70,47 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
 .carousel-button-next::after {
     left: 47%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* ------------------------------------------------------------------------- */
+/* PROJECT PAGE*/
+
+.project-list {
+    transform: translateY(100px);
+}
+
+.tmp-container {
+    margin: auto;
+}
+
+img.project-preview  {
+    width: 100%;
+}
+
+.project-scrollbox {
+    overflow: auto;
+    width: 150px;
+    height: 150px;
+    float:left;
+}
+
+.project-container {
+    width: 600px;
+    background-color: #ffcc33;
+    margin: auto;
+}
+
+.project-preview-container {
+    width: 300px;
+    float: left;
+    background-color: blue;
+}
+
+.project-description-container {
+    overflow: auto;  /* Allow for "scrollbox" */
+    width: 300px;
+    float: left;
+    height: 300px;
+    background-color: green;
+    padding-left: 50px;
 }
