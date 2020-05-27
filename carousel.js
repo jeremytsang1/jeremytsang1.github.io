@@ -28,7 +28,7 @@ function interactiveCarousel() {
     focusImage(original, current);
   }
 
-  function movePrev(arg) {
+  function movePrev() {
     let original = current;
 
     current = (current - 1) % itemCount;
