@@ -74,6 +74,9 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
 
 /* ------------------------------------------------------------------------- */
 /* PROJECT PAGE*/
+/* Aligning divs from this stack overflow post
+   https://stackoverflow.com/a/15374994
+*/
 
 .project-list {
     transform: translateY(100px);
