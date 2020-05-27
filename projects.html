@@ -11,142 +11,149 @@
 
     <title>Jeremy Tsang - Projects</title>
   </head>
+
+  <!-- BODY -->
   <body>
 
-    <!-- ================================================================================ -->
-    <!-- Horizontal Menu -->
-    <div class="horizontal-menu"></div>
+    <div class="page-content"> <!-- Contains all content. -->
+      <div class="content-wrapper"> <!-- Contains everything but footer. -->
+	<!-- ================================================================================ -->
+	<!-- Horizontal Menu -->
+	<div class="horizontal-menu"></div>
 
-    <!-- ================================================================================ -->
-    <!-- Projects Section -->
+	<!-- ================================================================================ -->
+	<!-- Projects Section -->
 
-    <div class="container project-page">
-      <h1 class="project-page title">Projects</h1>
-      <div class="row">
+	<div class="container project-page">
+	  <h1 class="project-page title">Projects</h1>
+	  <div class="row">
 
-	<!-- List of projects -->
-	<div class="col-2">
-	  <ul class="project-list">
-	    <li><a href="" class="project-selection-link">Robot</a></li>
-	    <li><a href="" class="project-selection-link">Orbit Hunt</a></li>
-	    <li><a href="" class="project-selection-link">Xiangqi</a></li>
-	  </ul>
-	</div>
-
-	<!-- Projects to display -->
-	<!-- Needs to be in same order as the list of projects. -->
-	<div class="col-10">
-	  <!-- Project 0: Robot (video) -->
-	  <div class="project-container">
-	    <div class="project-preview-container">
-	      <iframe class="project-preview" src="https://www.youtube.com/embed/VPrOSWtzkmc?start=150" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    <!-- List of projects -->
+	    <div class="col-2">
+	      <ul class="project-list">
+		<li><a href="" class="project-selection-link">Robot</a></li>
+		<li><a href="" class="project-selection-link">Orbit Hunt</a></li>
+		<li><a href="" class="project-selection-link">Xiangqi</a></li>
+	      </ul>
 	    </div>
-	    <div class="project-description-container">
-	      <h3>VIDEO</h3>
-	      <p class="project-ownership"><em>(Media owned by Jeremy Tsang)</em></p>
-	      <p>
-		This was my first Raspberry Pi project. It was initially a
-		challanged because I had never worked with hardware at this
-		point so it took some trial and error to purchase suitable
-		parts to make sure the robot was able to move properly. For
-		example I had initially intended to use tractor treads instead
-		of wheels since I was planning on driving the robot on uneven
-		terrain eventually but there were many diffulties keeping
-		them attached.
-	      </p>
-	      <p>
-		The actual coding was not terribly difficult to achive simple
-		car-like motion. The most challenging part was by far
-		programming the robot arm since coordinating multiple degrees
-		of freedom was not trivial.
-	      </p>
-	    </div>
-	    <div class="project-extra-info">
-	      <h4>More information:</h4>
-	      <a href="https://github.com/jeremytsang1/robot-cis">GitHub: Robot</a>
+
+	    <!-- Projects to display -->
+	    <!-- Needs to be in same order as the list of projects. -->
+	    <div class="col-10">
+	      <!-- Project 0: Robot (video) -->
+	      <div class="project-container">
+		<div class="project-preview-container">
+		  <iframe class="project-preview" src="https://www.youtube.com/embed/VPrOSWtzkmc?start=150" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="project-description-container">
+		  <h3>VIDEO</h3>
+		  <p class="project-ownership"><em>(Media owned by Jeremy Tsang)</em></p>
+		  <p>
+		    This was my first Raspberry Pi project. It was initially a
+		    challanged because I had never worked with hardware at this
+		    point so it took some trial and error to purchase suitable
+		    parts to make sure the robot was able to move properly. For
+		    example I had initially intended to use tractor treads instead
+		    of wheels since I was planning on driving the robot on uneven
+		    terrain eventually but there were many diffulties keeping
+		    them attached.
+		  </p>
+		  <p>
+		    The actual coding was not terribly difficult to achive simple
+		    car-like motion. The most challenging part was by far
+		    programming the robot arm since coordinating multiple degrees
+		    of freedom was not trivial.
+		  </p>
+		</div>
+		<div class="project-extra-info">
+		  <h4>More information:</h4>
+		  <a href="https://github.com/jeremytsang1/robot-cis">GitHub: Robot</a>
+		</div>
+	      </div>
+
+
+	      <!-- Project 1: Orbit Hunt (video) -->
+	      <div class="project-container">
+		<div class="project-preview-container">
+		  <iframe class="project-preview" src="https://www.youtube.com/embed/FtRzxSxA0O0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="project-description-container">
+		  <h3>VIDEO</h3>
+		  <p class="project-ownership"><em>(Media owned by Jeremy Tsang)</em></p>
+		  <p>
+		    This game was a submission for the <a href="https://itch.io/jam/game-off-2019">2019
+		    itch.io Game Off</a> and was a cooperative project between
+		    <a href="https://github.com/positive235">Hae-Ji Park</a>
+		    and me.
+		  </p>
+		  <p>
+		    The game places the player as the yellow ball whose goal is to
+		    collect the green balls without colliding with any of the red
+		    balls. However the movement of the yellow ball is restricted to
+		    the circling the predefined orbits. The advantage the yellow
+		    ball has against the red ones is that it can both jump across
+		    different orbits and change direction within a single orbit.
+		  </p>
+
+		  <p>
+		    This game was implemented using Pygame. The obvious challenge
+		    for this program was modeling the movement of the balls. To
+		    address this I realized the movement is not dissimilar to early
+		    atomic models (i.e. the Bohr model) where electrons where
+		    purported to orbit around some nucleus. In that model the main
+		    coordinate system used is spherical polar, however since this
+		    game is only two-dimensional planar polar coordinates will
+		    suffice.
+		  </p>
+
+		  <p>
+		    This game could be extended in multiple ways. For example, one
+		    could make it a multiplayer game with other players acting as
+		    the red balls. Additionally it would be interesting to maybe
+		    program an AI based on how the player's strategy.
+		  </p>
+		</div>
+		<div class="project-extra-info">
+		  <h4>More information:</h4>
+		  <a href="https://github.com/jeremytsang1/circle-game-game-off-2019">GitHub: Orbit Hunt</a>
+		</div>
+	      </div>
+
+	      <!-- Project 2: Xiangqi (screenshot) -->
+	      <div class="project-container">
+		<div class="project-preview-container">
+		  <img class="project-preview" src="static/img/xiangqi.png">
+		</div>
+		<div class="project-description-container">
+		  <h3>IMAGE</h3>
+		  <p class="project-ownership"><em>(Media owned by Jeremy Tsang)</em></p>
+		  <p>
+		    In Oregon State University's CS 162 course, the final project
+		    was to implement the logic for a game of
+		    <a href="https://en.wikipedia.org/wiki/Xiangqi">Xianqi (Chinese chess)</a>.
+		    This exercise was a good practice in Object Oriented
+		    Programming since it is clear that each piece has a different
+		    role/behaviour.
+		  </p>
+		  <p>
+		    The main data structure I used to represent the board was a 2D-array due to the	tabular
+		    nature of piece positions. Although moves are traditionally
+		    represented with "algebraic notation" (e.g. "A1" would be the lower left corner) it
+		    was straightforward to make a function to translate these
+		    algebraic notations into traditional array indices.
+		  </p>
+		</div>
+		<div class="project-extra-info">
+		  <h4>More information:</h4>
+		  <a href="https://github.com/jeremytsang1/xiangqi">GitHub: Xiangqi</a>
+		</div>
+	      </div>
+
 	    </div>
 	  </div>
-
-
-	  <!-- Project 1: Orbit Hunt (video) -->
-	  <div class="project-container">
-	    <div class="project-preview-container">
-	      <iframe class="project-preview" src="https://www.youtube.com/embed/FtRzxSxA0O0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	    </div>
-	    <div class="project-description-container">
-	      <h3>VIDEO</h3>
-	      <p class="project-ownership"><em>(Media owned by Jeremy Tsang)</em></p>
-	      <p>
-		This game was a submission for the <a href="https://itch.io/jam/game-off-2019">2019
-		itch.io Game Off</a> and was a cooperative project between
-		<a href="https://github.com/positive235">Hae-Ji Park</a>
-		and me.
-	      </p>
-	      <p>
-		The game places the player as the yellow ball whose goal is to
-		collect the green balls without colliding with any of the red
-		balls. However the movement of the yellow ball is restricted to
-		the circling the predefined orbits. The advantage the yellow
-		ball has against the red ones is that it can both jump across
-		different orbits and change direction within a single orbit.
-	      </p>
-
-	      <p>
-		This game was implemented using Pygame. The obvious challenge
-		for this program was modeling the movement of the balls. To
-		address this I realized the movement is not dissimilar to early
-		atomic models (i.e. the Bohr model) where electrons where
-		purported to orbit around some nucleus. In that model the main
-		coordinate system used is spherical polar, however since this
-		game is only two-dimensional planar polar coordinates will
-		suffice.
-	      </p>
-
-	      <p>
-		This game could be extended in multiple ways. For example, one
-		could make it a multiplayer game with other players acting as
-		the red balls. Additionally it would be interesting to maybe
-		program an AI based on how the player's strategy.
-	      </p>
-	    </div>
-	    <div class="project-extra-info">
-	      <h4>More information:</h4>
-	      <a href="https://github.com/jeremytsang1/circle-game-game-off-2019">GitHub: Orbit Hunt</a>
-	    </div>
-	  </div>
-
-	  <!-- Project 2: Xiangqi (screenshot) -->
-	  <div class="project-container">
-	    <div class="project-preview-container">
-	      <img class="project-preview" src="static/img/xiangqi.png">
-	    </div>
-	    <div class="project-description-container">
-	      <h3>IMAGE</h3>
-	      <p class="project-ownership"><em>(Media owned by Jeremy Tsang)</em></p>
-	      <p>
-		In Oregon State University's CS 162 course, the final project
-		was to implement the logic for a game of
-		<a href="https://en.wikipedia.org/wiki/Xiangqi">Xianqi (Chinese chess)</a>.
-		This exercise was a good practice in Object Oriented
-		Programming since it is clear that each piece has a different
-		role/behaviour.
-	      </p>
-	      <p>
-		The main data structure I used to represent the board was a 2D-array due to the	tabular
-		nature of piece positions. Although moves are traditionally
-		represented with "algebraic notation" (e.g. "A1" would be the lower left corner) it
-		was straightforward to make a function to translate these
-		algebraic notations into traditional array indices.
-	      </p>
-	    </div>
-	    <div class="project-extra-info">
-	      <h4>More information:</h4>
-	      <a href="https://github.com/jeremytsang1/xiangqi">GitHub: Xiangqi</a>
-	    </div>
-	  </div>
-
 	</div>
       </div>
+      <footer id="footer">Footer of projects</footer>
     </div>
 
     <!-- ================================================================================ -->

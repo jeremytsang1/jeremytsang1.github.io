@@ -3,6 +3,31 @@ body {
     background-color: #F5F5F5
 }
 
+/* ------------------------------------------------------------------------- */
+/* Use footer placement technique inspired by */
+/* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+.page-content {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+
+    text-align: center;
+    margin-top: 3em;
+    background-color: lightgray;
+}
+
+/* ------------------------------------------------------------------------- */
+
 ul.nav {
     border: 1px solid black;
     background-color: lightgray;

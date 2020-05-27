@@ -11,59 +11,66 @@
 
     <title>Jeremy Tsang - Contact</title>
   </head>
+
+  <!-- BODY -->
   <body>
 
-    <!-- ================================================================================ -->
-    <!-- Horizontal Menu -->
-    <div class="horizontal-menu"></div>
+    <div class="page-content"> <!-- Contains all content. -->
+      <div class="content-wrapper"> <!-- Contains everything but footer. -->
+	<!-- ================================================================================ -->
+	<!-- Horizontal Menu -->
+	<div class="horizontal-menu"></div>
 
-    <!-- ================================================================================ -->
+	<!-- ================================================================================ -->
 
-    <div class="container">
-      <div class="row">
+	<div class="container">
+	  <div class="row">
 
-	<!-- My email in case user would prefer to contact me via their own email client -->
-	<div class="col-3">
-	  <h3>Email</h3>
-	  <a href="mailto: tsangj@oregonstate.edu">tsangj@oregonstate.edu</a>
-	</div>
-
-	<!-- Form to allow contact directly from the page. -->
-	<div class="col-6">
-	  <form target="_self" method="GET" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php">
-	    <!-- User's Name -->
-	    <div class="form-group">
-	      <label for="contactName">Name</label>
-	      <input id="contactName" name="name" type="text" value="" class="form-control" />
+	    <!-- My email in case user would prefer to contact me via their own email client -->
+	    <div class="col-3">
+	      <h3>Email</h3>
+	      <a href="mailto: tsangj@oregonstate.edu">tsangj@oregonstate.edu</a>
 	    </div>
 
-	    <!-- User's Email -->
-	    <div class="form-group">
-	      <label for="contactEmail">Email</label>
-	      <input id="contactEmail" name="email" type="text" value="" class="form-control"/>
+	    <!-- Form to allow contact directly from the page. -->
+	    <div class="col-6">
+	      <form target="_self" method="GET" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php">
+		<!-- User's Name -->
+		<div class="form-group">
+		  <label for="contactName">Name</label>
+		  <input id="contactName" name="name" type="text" value="" class="form-control" />
+		</div>
+
+		<!-- User's Email -->
+		<div class="form-group">
+		  <label for="contactEmail">Email</label>
+		  <input id="contactEmail" name="email" type="text" value="" class="form-control"/>
+		</div>
+
+		<!-- Message Subject Line -->
+		<div class="form-group">
+		  <label for="contactSubject">Subject</label>
+		  <input id="contactSubject" name="subject" type="text" value="" class="form-control"/>
+		</div>
+
+		<!-- Message Content -->
+		<div class="form-group">
+		  <label for="contact-message">Content</label>
+		  <textarea id="contact-message" name="content" class="form-control"></textarea>
+		</div>
+
+		<!-- Send Button -->
+		<button type="submit" class="btn btn-primary">Send</button>
+	      </form>
 	    </div>
 
-	    <!-- Message Subject Line -->
-	    <div class="form-group">
-	      <label for="contactSubject">Subject</label>
-	      <input id="contactSubject" name="subject" type="text" value="" class="form-control"/>
+	    <div class="col-3">
+	      <!-- Empty space -->
 	    </div>
-
-	    <!-- Message Content -->
-	    <div class="form-group">
-	      <label for="contact-message">Content</label>
-	      <textarea id="contact-message" name="content" class="form-control"></textarea>
-	    </div>
-
-	    <!-- Send Button -->
-	    <button type="submit" class="btn btn-primary">Send</button>
-	  </form>
-	</div>
-
-	<div class="col-3">
-	  <!-- Empty space -->
+	  </div>
 	</div>
       </div>
+      <footer id="footer">Footer of contact</footer>
     </div>
 
     <!-- Optional JavaScript -->
