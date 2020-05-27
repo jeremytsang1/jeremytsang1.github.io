@@ -222,10 +222,14 @@ td, th {
 }
 
 div.powerlifting-preview-container {
+    /* Allow Description to be side by side with this <div> tag's
+       contents. */
     float: left;
 }
 
 .powerlifting-preview {
+    /* Specify dimensions here instead of containing <div> or else video
+       will get too large.*/
     height: 315px;
     width: 560px;
 }
