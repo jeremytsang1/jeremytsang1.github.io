@@ -72,7 +72,7 @@ function interactiveCarousel() {
    * Remove the styling class name from the original item/caption and add it to
    * the current one instead.
    * @param {number} original - index of the original item/caption.
-   * @param {number} current - index of the furrent item/caption
+   * @param {number} current - index of the current item/caption
    * @return {null}
    */
   function focusImage(original, current) {
