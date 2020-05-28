@@ -12,7 +12,7 @@ function main() {
 
   let initialYear = 2020;
 
-  addHorizontalMenu(pageNames)
+  addHorizontalMenu(pageNames);
   addFooterTextContent(initialYear);
 }
 
