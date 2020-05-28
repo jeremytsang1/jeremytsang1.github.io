@@ -6,7 +6,7 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
 function interactiveCarousel() {
   const itemClassName = "carousel-img";
   const captionClassName = "carousel-img-caption";
-  const toggleClassName = "active";
+  const toggleClassName = "active"; // Class name that applies styling.
   let items = document.getElementsByClassName(itemClassName);
   let captions = document.getElementsByClassName(captionClassName);
   let itemCount = items.length;
@@ -18,11 +18,21 @@ function interactiveCarousel() {
   // Keep calling moveNext() to get "autoscroll" effect.
   let timer = setInterval(moveNext, 3000)
 
+  /**
+   * Assumes none of the items or captions have the toggleClassName at the
+   * start when called. Appends said class name to the initial items/caption.
+   * @return {null}
+   */
   function setInitialClasses() {
     items[current].classList.add(toggleClassName);
     captions[current].classList.add(toggleClassName);
   }
 
+  /**
+   * Setup the Event listeners for the two elements reponsible for swithcing to
+   * the next and previous images.
+   * @return {null}
+   */
   function carouselButtonListeners() {
     let next = document.querySelector(".carousel-button-next");
     let prev = document.querySelector(".carousel-button-prev");
@@ -31,12 +41,22 @@ function interactiveCarousel() {
     prev.addEventListener('click', movePrev);
   }
 
+  /**
+   * Unfocuses the current image and focuses the one sequentially after it
+   * while updating the current index.
+   * @return {null}
+   */
   function moveNext() {
     let original = current;
     current = (current + 1) % itemCount;  // Wrap around with mod operator.
     focusImage(original, current);
   }
 
+  /**
+   * Unfocuses the current image and focuses the one sequentially before it
+   * while updating the current index.
+   * @return {null}
+   */
   function movePrev() {
     let original = current;
 
@@ -48,6 +68,13 @@ function interactiveCarousel() {
     focusImage(original, current);
   }
 
+  /**
+   * Remove the styling class name from the original item/caption and add it to
+   * the current one instead.
+   * @param {number} original - index of the original item/caption.
+   * @param {number} current - index of the furrent item/caption
+   * @return {null}
+   */
   function focusImage(original, current) {
     items[original].classList.remove(toggleClassName)
     items[current].classList.add(toggleClassName)
