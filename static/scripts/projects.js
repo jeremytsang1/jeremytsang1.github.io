@@ -12,8 +12,11 @@ function projectViewer() {
 
   addLinkListeners();
 
-  // Add listener to each project link to focus whichever project was
-  // selected.
+  /**
+   * Add listener to each project link to focus whichever project was
+   * selected.
+   * @return {null}
+   */
   function addLinkListeners() {
     for (let i = 0; i < links.length; i++) {
       links[i].addEventListener("click", function() {
@@ -31,6 +34,13 @@ function projectViewer() {
     }
   }
 
+  /**
+   * Remove the styling class name from the original item and add it to
+   * the current one instead.
+   * @param {} original - index of the original item.
+   * @param {} current - index of the current item.
+   * @return {null}
+   */
   function selectProject(original, current) {
     projects[original].classList.remove(toggleClassName);
     projects[current].classList.add(toggleClassName);
