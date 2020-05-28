@@ -2,4 +2,41 @@
 #+AUTHOR: Jeremy Tsang
 #+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
 * Description
-Personal portfolio site.
+This repository comprises HTML, CSS, and JS files to make a simple portfolio website. It has the following functionalities
+* Requirements
+** Pages
+- Consists of 4 pages:
+  - 1 main page
+  - 3 subpages
+
+- A horizontal menu is present at the top of each page to allow navigation to all other pages.
+** Image carousel
+- The home page has a image carousel that has both:
+  - prev and next buttons
+  - autoscrolling (slideshow) functionality
+** Scrollbox
+- Can put either text or images as long as it scrolls.
+** Unordered list
+- Has unordered list with several entries.
+** Form
+- can submit either POST or GET
+** Download button
+- Allows downloading a local file.
+** External links
+- Links that lead to outside pages.
+** Cites all images/video/media
+* Details
+** Page 0: main
+- Has the carousel of various project images.
+
+- Also contains a short elevator pitch.
+
+- Has list of my external links to social media, etc.
+** Page 1: projects
+- Has a list of links to switch focus to media with a short description (and GitHub link)
+** Page 2: about
+- Has information about my personal interests and hobbies.
+** Page 3: contact
+- Has a form to submit an email message to me.
+* Installation
+Place the contents of this directory inside a ~public_html/~ directory.
