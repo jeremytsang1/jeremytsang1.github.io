@@ -22,7 +22,7 @@ function main() {
  * @param {[string, string]} pageNames - array of objects consisting
  * of title and HTML filenames.
  * @param {string} classToLink="horizontal-menu" -
- * @return
+ * @return {null}
  */
 function addHorizontalMenu(pageNames, classToLink="horizontal-menu") {
   let menuDiv = document.querySelector(`.${classToLink}`);
