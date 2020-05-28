@@ -51,6 +51,7 @@ function addHorizontalMenu(pageNames, classToLink="horizontal-menu") {
 
 /**
  * Fill the footer with a string about copyright information.
+ * Assumes there is a unique <footer id="footer"> in the HTML document.
  * @param {number} firstYear - The first year to start the copyright.
  * @return {null}
  */
