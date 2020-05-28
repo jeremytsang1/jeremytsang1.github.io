@@ -4,8 +4,8 @@
 https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
 */
 function interactiveCarousel() {
-  let itemClassName = "carousel-img";
-  let captionClassName = "carousel-img-caption";
+  const itemClassName = "carousel-img";
+  const captionClassName = "carousel-img-caption";
   const toggleClassName = "active";
   let items = document.getElementsByClassName(itemClassName);
   let captions = document.getElementsByClassName(captionClassName);
