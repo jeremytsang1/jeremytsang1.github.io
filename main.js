@@ -10,7 +10,10 @@ function main() {
       file: "contact.html"},
   ];
 
+  let initialYear = 2020;
+
   addHorizontalMenu(pageNames)
+  addFooterTextContent(initialYear);
 }
 
 /**
@@ -44,6 +47,20 @@ function addHorizontalMenu(pageNames, classToLink="horizontal-menu") {
 
   // Link the list to the div in the menu.
   menuDiv.appendChild(menuList);
+}
+
+/**
+ * Fill the footer with a string about copyright information.
+ * @param {number} firstYear - The first year to start the copyright.
+ * @return {null}
+ */
+function addFooterTextContent(firstYear) {
+  let footer = document.querySelector("#footer");
+  let currentYear = new Date().getFullYear();
+  let copyrightMsg = (currentYear !== firstYear) ?
+      `Copyright ${firstYear}-${currentYear} Jeremy Tsang` :
+      `Copyright ${firstYear} Jeremy Tsang`;
+  footer.textContent = copyrightMsg;
 }
 
 // ----------------------------------------------------------------------------
