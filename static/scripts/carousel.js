@@ -6,10 +6,11 @@ https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanil
 function interactiveCarousel() {
   let itemClassName = "carousel-img";
   let captionClassName = "carousel-img-caption";
+  const toggleClassName = "active";
   let items = document.getElementsByClassName(itemClassName);
   let captions = document.getElementsByClassName(captionClassName);
   let itemCount = items.length;
-  let current = 0;
+  let current = 0;  // Start at the first item/caption.
 
   setInitialClasses();
   carouselButtonListeners();
@@ -18,8 +19,8 @@ function interactiveCarousel() {
   let timer = setInterval(moveNext, 3000)
 
   function setInitialClasses() {
-    items[current].classList.add("active");
-    captions[current].classList.add("active");
+    items[current].classList.add(toggleClassName);
+    captions[current].classList.add(toggleClassName);
   }
 
   function carouselButtonListeners() {
@@ -48,10 +49,10 @@ function interactiveCarousel() {
   }
 
   function focusImage(original, current) {
-    items[original].classList.remove("active")
-    items[current].classList.add("active")
-    captions[original].classList.remove("active")
-    captions[current].classList.add("active")
+    items[original].classList.remove(toggleClassName)
+    items[current].classList.add(toggleClassName)
+    captions[original].classList.remove(toggleClassName)
+    captions[current].classList.add(toggleClassName)
   }
 
 }
