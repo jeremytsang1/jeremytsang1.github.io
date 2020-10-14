@@ -1,1 +1,117 @@
-jeremy tsang
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="static/styles/styles.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <title>Jeremy Tsang</title>
+  </head>
+
+  <!-- BODY -->
+  <body>
+
+    <div class="page-content"> <!-- Contains all content. -->
+      <div class="content-wrapper"> <!-- Contains everything but footer. -->
+	<!-- ================================================================================ -->
+	<!-- Horizontal Menu -->
+	<div class="horizontal-menu"></div>
+
+	<!-- ================================================================================ -->
+	<!-- Additional Information -->
+	<div class="container">
+	  <!-- ======================================== -->
+	  <!-- Social Media and Resume -->
+	  <div class="row">
+	    <div class="col-3">
+	      <h4>External Links</h4>
+	      <ul>
+		<li><a href="https://www.linkedin.com/in/jeremytsang1/">LinkedIn</a></li>
+		<li><a href="https://www.github.com/jeremytsang1">GitHub</a></li>
+		<li><a href="https://www.youtube.com/channel/UCLI-_PITusmOhuEdXT-4Wqw?view_as=subscriber">YouTube</a></li>
+	      </ul>
+
+	      <h4>Resume</h4>
+	      <button type="button" class="btn" id="resume-download-button"><a href="static/files/TSANG_JEREMY_RESUME.pdf" download>Download</a></button>
+
+	      <h4>Contact</h4>
+	      Email: tsangj@oregonstate.edu
+	    </div>
+
+	    <!-- ======================================== -->
+	    <!-- Elevator Pitch -->
+	    <div class="col-9">
+	      <h1>Jeremy Tsang</h1>
+	      <h4>Me in a nutshell</h4>
+	      <p>
+		I am a computer science student currently looking to break
+		into the more quantitative sides of the field. My
+		background is technically pure math and chemistry, but
+		I've worked a variety of roles in STEM fields be it coding
+		molecular models in an academic setting, performing
+		analysis on trace amounts of pesticides/fertilizers in an
+		agricultural chemistry lab, or teaching chemistry/math/CS
+		students at high school and college levels. I'm passionate
+		about exploring new technologies and always try to
+		whenever I get chance. This is the main reason I'm
+		switching away from lab work to make my way towards tech.
+	      </p>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- ================================================================================ -->
+	<!-- Image Carousel -->
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-3"></div>
+	    <div class="col-6">
+	      <!-- Carousel structure borrowed from Marcus Michaels' tutorial "How toa
+		   build a carousel from scratch in vanilla JS" (2019-01-13).
+
+		   https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
+	      -->
+	      <div class="carousel-container">
+		<div class="carousel-buttons">
+		  <!-- Citation: I created the image left-arrow-small.png in GIMP version 2.10.18 -->
+		  <img class="carousel-button-prev" src="static/img/left-arrow-small.png" alt=""/>
+		  <img class="carousel-button-next" src="static/img/left-arrow-small.png" alt=""/>
+		</div>
+
+		<div class="carousel">
+		  <img class="carousel-img" src="static/img/robot-diag.jpg">
+		  <figcaption class="carousel-img-caption">Raspberry Pi Robot (diagonal view)</figcaption>
+		  <img class="carousel-img" src="static/img/robot-side.jpg">
+		  <figcaption class="carousel-img-caption">Raspberry Pi Robot (side view)</figcaption>
+		  <img class="carousel-img" src="static/img/orbit-hunt.jpg">
+		  <figcaption class="carousel-img-caption">Orbit Hunt</figcaption>
+		  <img class="carousel-img" src="static/img/xiangqi.png">
+		  <figcaption class="carousel-img-caption">Xiangqi</figcaption>
+		</div>
+		<p class="image-ownership"><em>All images created and owned by Jeremy Tsang</em></p>
+	      </div>
+	    </div>
+	    <div class="col-3"></div>
+	  </div>
+	</div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+
+    <!-- ================================================================================ -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- ================================================================================ -->
+    <!-- Local Scripts -->
+    <script src="static/scripts/main.js"></script>
+    <script src="static/scripts/carousel.js"></script>
+  </body>
+</html>
