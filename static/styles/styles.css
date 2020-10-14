@@ -43,6 +43,12 @@ button {
 }
 
 /* ------------------------------------------------------------------------- */
+/* index.html */
+#resume-download-button {
+    margin-bottom: 1em;
+}
+
+/* ------------------------------------------------------------------------- */
 /* IMAGE CAROUSEL */
 
 /* Carousel styles borrowed from Marcus Michaels' tutorial "How to

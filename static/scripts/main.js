@@ -4,10 +4,10 @@ function main() {
       file: "index.html"},
     {title: "projects",
       file: "projects.html"},
-    {title: "about",
+    {title: "recreation",
       file: "about.html"},
-    {title: "contact",
-      file: "contact.html"},
+    // {title: "contact",
+    //   file: "contact.html"},
   ];
 
   let initialYear = 2020;
