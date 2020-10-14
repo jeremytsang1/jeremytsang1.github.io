@@ -16,7 +16,7 @@ function interactiveCarousel() {
   carouselButtonListeners();
 
   // Keep calling moveNext() to get "autoscroll" effect.
-  let timer = setInterval(moveNext, 3000)
+  let timer = setInterval(moveNext, 9000)
 
   /**
    * Assumes none of the items or captions have the toggleClassName at the
